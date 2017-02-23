@@ -278,6 +278,7 @@ open class DKImagePickerController : UINavigationController {
     
     private lazy var assetFetchOptions: PHFetchOptions = {
         let assetFetchOptions = PHFetchOptions()
+        assetFetchOptions.includeHiddenAssets = true
         return assetFetchOptions
     }()
     
